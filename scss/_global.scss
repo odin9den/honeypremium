@@ -1,0 +1,96 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  color: #e5ceb9;
+  background: #000;
+  font-size: 18px;
+  font-family: "MADEEvolveSans-Light";
+  font-weight: 300;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+p {
+  margin: 0;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+button {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.container {
+  max-width: 970px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.order-btn {
+  background-color: #b67a0c;
+  padding: 20px 40px;
+  color: #281802;
+  text-transform: uppercase;
+  font-family: "MADEEvolveSans-Bold", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+.black-title {
+  font-family: "Baskerville-SemiBold";
+  font-weight: 600;
+  color: #0f0f0f;
+  font-size: 42px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.gold-title {
+  font-family: "Baskerville-LightA";
+  font-weight: 300;
+  font-size: 42px;
+  text-transform: uppercase;
+  @extend %golden;
+  max-width: 520px;
+}
